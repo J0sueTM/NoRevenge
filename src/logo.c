@@ -9,10 +9,12 @@ InitLogo(Data *data)
              (Vector2)
              {
                TARGET_SOURCE_SIZE.x * 0.5f,
-               TARGET_SOURCE_SIZE.y * 0.4f
+               TARGET_SOURCE_SIZE.y * 0.5f
              },
-             1.f,
+             2.f,
              1);
+  data->logo.dest.y -= (data->logo.texture.height * 0.5f) + 2.f;
+
   InitSprite(&data->logoTitle,
              "res/sprite/le_fish_studio_title.png",
              (Vector2)
@@ -20,8 +22,9 @@ InitLogo(Data *data)
                TARGET_SOURCE_SIZE.x * 0.5f,
                TARGET_SOURCE_SIZE.y * 0.7f
              },
-             1.f,
+             2.f,
              1);
+//  data->logoTitle.dest.y += data->logoTitle.texture.height + 1.f;
 
   data->logo.color.a = 0;
   data->logoTitle.color.a = 0;

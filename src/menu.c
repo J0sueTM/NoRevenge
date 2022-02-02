@@ -8,22 +8,20 @@ InitMenu(Data *data)
              (Vector2)
              {
                TARGET_SOURCE_SIZE.x * 0.5f,
-               0.f
+               TARGET_SOURCE_SIZE.y * 0.4f
              },
              1.f,
              1);
-  data->title.dest.y = (data->title.dest.height * 0.5f) + 1.f;
 
   InitSprite(&data->button,
              "res/sprite/button.png",
              (Vector2)
              {
                0.f,
-               TARGET_SOURCE_SIZE.y
+               TARGET_SOURCE_SIZE.y * 0.78f
              },
              1.f,
-             2);
-  data->button.dest.y -= (data->button.dest.height * 0.5f) + 2.f;
+             3);
 
   data->menuMusic = LoadMusicStream("res/sound/stream/menu.wav");
   PlayMusicStream(data->menuMusic);

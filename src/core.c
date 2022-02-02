@@ -10,7 +10,7 @@ InitGame()
   InitWindow(0, 0, "No Revenge | Game Jaaj 7");
   InitAudioDevice();
 
-  ToggleFullscreen();
+//  ToggleFullscreen();
 
   SetTargetFPS(60);
   SetExitKey(0);
@@ -45,6 +45,8 @@ InitGame()
   data->targetDest.y = data->windowSize.y * 0.5f;
   data->targetDest.width = data->targetSize.x;
   data->targetDest.height = data->targetSize.y;
+
+  data->font = LoadFont("res/font/iFlash705.ttf");
 
   /* Misc */
   data->currentTime = GetTime();

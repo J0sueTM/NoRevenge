@@ -7,7 +7,7 @@
 #include "raylib.h"
 
 #define TARGET_PROPORTION (Vector2){ 16.f, 9.f }
-#define TARGET_SOURCE_SIZE (Vector2){ 64.f, 36.f }
+#define TARGET_SOURCE_SIZE (Vector2){ 128.f, 72.f }
 
 #define DEFAULT_FRAMERATE 12
 
@@ -57,6 +57,8 @@ typedef struct Data
   /* Sprites */
   Sprite logo, logoTitle;
   Sprite title, button;
+
+  Font font;
 
   /* Sounds */
   Sound bubble;
